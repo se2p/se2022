@@ -30,8 +30,5 @@ Eigene Notebooks zu UML werden die IPlantUML Erweiterung benoetigen:
 
 Auch wenn diese Vorlesung keine Programmiervorlesung ist, so benoetigen wir
 dennoch ein gewisses Verstaendnis elementarer OOP Konzepte. Das erste Notebook
-enthaelt einfache Beispiele dazu. 
-
-[HTML Export](rendered/1 Einführung in OOP.html)
-[MD Export](rendered/1 Einführung in OOP.md)
+enthaelt einfache Beispiele dazu. [Markdown Export](rendered/1%20Einführung%20in%20OOP.md)
 
