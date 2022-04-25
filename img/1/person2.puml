@@ -2,8 +2,8 @@
 skinparam classAttributeIconSize 0
 
 abstract class Person {
- -salary: int
- +Person(int: salary)
+ #salary: int
+ #Person(int: salary)
  +{abstract} getSalary(): int
  +setSalary(int value)
  +setSalary(double value)

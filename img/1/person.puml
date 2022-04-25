@@ -2,8 +2,8 @@
 skinparam classAttributeIconSize 0
 
 class Person {
- -name: String
- -age: int
+ #name: String
+ #age: int
  +Person(name,age)
  +increaseAge()
 }
