@@ -295,15 +295,15 @@ Vererbung ist ein Mechanismus um neue Klassen mit Hilfe bereits bestehender Klas
 
 ```Java
 class Person {
-  String name;
-  int age;
+  protected String name;
+  protected int age;
   
-  Person(String name, int age) {
+  public Person(String name, int age) {
     this.name = name;
     this.age = age;
   }
 
-  void increaseAge() {
+  public void increaseAge() {
     age++;
   }
   
@@ -358,14 +358,14 @@ In Java implementiert sieht die Unterklasse `Employee` so aus:
 
 ```Java
 class Employee extends Person {
-  int salary;
+  private int salary;
   
-  Employee(String name, int age, int salary) {
+  public Employee(String name, int age, int salary) {
     super(name, age);
     this.salary = salary;
   }
   
-  void increaseSalary() {
+  public void increaseSalary() {
     salary += 1000;
   }
   
@@ -446,28 +446,28 @@ import java.awt.Point
 
 ```Java
 abstract class Graphic {
-  Point origin = new Point(0,0);
+  private Point origin = new Point(0,0);
  
-  Point getOrigin() {
+  public Point getOrigin() {
     return origin;
   }
  
-  abstract double getArea();
+  public abstract double getArea();
 }
 ```
 
 
 ```Java
 class Rectangle extends Graphic {
-  int length;
-  int width;
+  private int length;
+  private int width;
   
-  Rectangle(int width, int length) {
+  public Rectangle(int width, int length) {
     this.length = length;
     this.width = width;
   }
   
-  double getArea() {
+  public double getArea() {
     return length * width;
   }
 }
@@ -476,13 +476,13 @@ class Rectangle extends Graphic {
 
 ```Java
 class Circle extends Graphic {
-  int radius;
+  private int radius;
   
-  Circle(int radius) {
+  public Circle(int radius) {
     this.radius = radius;
   }
   
-  double getArea() {
+  public double getArea() {
     return radius * radius * Math.PI;
   }
 }
@@ -635,25 +635,25 @@ Ein wichtiges Konzept bei der Vererbung und Polymorphie ist die Unterscheidung z
 ```Java
 abstract class Person {
 
-  int salary = 1000;
+  protected int salary = 1000;
   
-  Person(int salary) {
+  protected Person(int salary) {
     this.salary = salary;
   }
   
-  abstract int getSalary();
+  public abstract int getSalary();
   
-  void setSalary(int value) {
+  public void setSalary(int value) {
     System.out.println("Setting salary to int value");
     salary = value;
   }
   
-  void setSalary(double value) {
+  public void setSalary(double value) {
     System.out.println("Setting salary to double value");
     salary = (int) Math.ceil(value);
   }
   
-  void setSalary(String value) {
+  public void setSalary(String value) {
     System.out.println("Setting salary to string value");
     salary = Integer.parseInt(value);
   }
@@ -665,11 +665,11 @@ abstract class Person {
 ```Java
 class SelfEmployed extends Person {
 
-  SelfEmployed() {
+  public SelfEmployed() {
     super(0);
   }
 
-  int getSalary() {
+  public int getSalary() {
     return 0;
   }
 }
@@ -679,11 +679,11 @@ class SelfEmployed extends Person {
 ```Java
 class Employee extends Person {
 
-  Employee(int salary) {
+  public Employee(int salary) {
     super(salary);
   }
 
-  int getSalary() {
+  public int getSalary() {
     return salary;
   }
 }
@@ -692,11 +692,11 @@ class Employee extends Person {
 
 ```Java
 class Boss extends Employee {
-  Boss(int salary) {
+  public Boss(int salary) {
     super(salary);
   }
   
-  int getSalary() {
+  public int getSalary() {
     return (int) Math.ceil(salary * 1.2); // Bonus
   }
 }
