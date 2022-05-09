@@ -121,7 +121,7 @@ junit.run(MaximumTest.class);
 
 
 
-    org.junit.runner.Result@5fdc1bc
+    org.junit.runner.Result@685cac0
 
 
 
@@ -156,7 +156,7 @@ junit.run(MaximumTest.class);
 ```
 
     .E.
-    Time: 0,006
+    Time: 0,003
     There was 1 failure:
     1) testMaximumSecond(REPL.$JShell$24B$MaximumTest)
     java.lang.AssertionError: expected:<50> but was:<10>
@@ -174,7 +174,7 @@ junit.run(MaximumTest.class);
 
 
 
-    org.junit.runner.Result@2b6bb165
+    org.junit.runner.Result@625a8576
 
 
 
@@ -209,7 +209,7 @@ junit.run(MaximumTest.class);
 ```
 
     .E.
-    Time: 0,002
+    Time: 0,001
     There was 1 failure:
     1) testMaximumSecond(REPL.$JShell$24C$MaximumTest)
     java.lang.AssertionError: If y is larger than x, then y should be returned. expected:<50> but was:<10>
@@ -226,7 +226,7 @@ junit.run(MaximumTest.class);
 
 
 
-    org.junit.runner.Result@307d7ba0
+    org.junit.runner.Result@37f759d5
 
 
 
@@ -253,7 +253,7 @@ junit.run(MaximumTest.class);
 ```
 
     ..
-    Time: 0,002
+    Time: 0,001
     
     OK (2 tests)
     
@@ -262,7 +262,7 @@ junit.run(MaximumTest.class);
 
 
 
-    org.junit.runner.Result@61306e0c
+    org.junit.runner.Result@16d5699f
 
 
 
@@ -304,7 +304,7 @@ junit.run(MaximumTest.class);
 
 
 
-    org.junit.runner.Result@6985201c
+    org.junit.runner.Result@7cb36662
 
 
 
@@ -350,7 +350,7 @@ junit.run(MaximumTest.class);
     .Erzeuge neues Maximum-Objekt
     .Erzeuge neues Maximum-Objekt
     
-    Time: 0,003
+    Time: 0,001
     
     OK (2 tests)
     
@@ -359,7 +359,7 @@ junit.run(MaximumTest.class);
 
 
 
-    org.junit.runner.Result@46d4390c
+    org.junit.runner.Result@62cf1e8d
 
 
 
@@ -434,7 +434,7 @@ junit.run(MaximumTest.class);
 
 
 
-    org.junit.runner.Result@76eeb824
+    org.junit.runner.Result@4e36a578
 
 
 
@@ -476,7 +476,7 @@ junit.run(MaximumTest.class);
 
 
 
-    org.junit.runner.Result@3f883184
+    org.junit.runner.Result@1867b4f5
 
 
 
@@ -512,7 +512,7 @@ junit.run(MaximumTest.class);
 
 
 
-    org.junit.runner.Result@2f895843
+    org.junit.runner.Result@72b51446
 
 
 
@@ -537,7 +537,7 @@ import java.time.LocalDate;
 
 
 ```Java
-class LocalDateTest {
+class DatePatternTest {
   @Test
   public void testMatches() {
       DatePattern pattern = new DatePattern(2022, 5, 9);
@@ -549,15 +549,15 @@ class LocalDateTest {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     .E
     Time: 0,001
     There was 1 failure:
-    1) testMatches(REPL.$JShell$39$LocalDateTest)
+    1) testMatches(REPL.$JShell$39$DatePatternTest)
     jdk.jshell.spi.SPIResolutionException: resolution exception
-    	at REPL.$JShell$39$LocalDateTest.<init>($JShell$39.java:21)
+    	at REPL.$JShell$39$DatePatternTest.<init>($JShell$39.java:21)
     
     FAILURES!!!
     Tests run: 1,  Failures: 1
@@ -567,7 +567,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@322f404a
+    org.junit.runner.Result@43559af2
 
 
 
@@ -588,7 +588,7 @@ class DatePattern {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     .
@@ -601,7 +601,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@15d94fa3
+    org.junit.runner.Result@70bd3a36
 
 
 
@@ -609,7 +609,7 @@ Nun verfeinern wir Schrittweise unser Feature mit neuen Szenarien, die noch nich
 
 
 ```Java
-class LocalDateTest {
+class DatePatternTest {
   @Test
   public void testMatches() {
       DatePattern pattern = new DatePattern(2022, 5, 9);
@@ -628,19 +628,19 @@ class LocalDateTest {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     .E.
     Time: 0,001
     There was 1 failure:
-    1) testMatchesOtherDay(REPL.$JShell$39C$LocalDateTest)
+    1) testMatchesOtherDay(REPL.$JShell$39C$DatePatternTest)
     java.lang.AssertionError
     	at org.junit.Assert.fail(Assert.java:87)
     	at org.junit.Assert.assertTrue(Assert.java:42)
     	at org.junit.Assert.assertFalse(Assert.java:65)
     	at org.junit.Assert.assertFalse(Assert.java:75)
-    	at REPL.$JShell$39C$LocalDateTest.testMatchesOtherDay($JShell$39C.java:27)
+    	at REPL.$JShell$39C$DatePatternTest.testMatchesOtherDay($JShell$39C.java:27)
     
     FAILURES!!!
     Tests run: 2,  Failures: 1
@@ -650,7 +650,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@664b245
+    org.junit.runner.Result@33e8edde
 
 
 
@@ -673,7 +673,7 @@ class DatePattern {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     ..
@@ -686,7 +686,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@64992112
+    org.junit.runner.Result@50c8f7c0
 
 
 
@@ -694,7 +694,7 @@ Wir können ähnliche Tests auch zur Überprüfung des Monats und des Jahres hin
 
 
 ```Java
-class LocalDateTest {
+class DatePatternTest {
   @Test
   public void testMatches() {
       DatePattern pattern = new DatePattern(2022, 5, 9);
@@ -727,26 +727,26 @@ class LocalDateTest {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     .E.E..
     Time: 0,002
     There were 2 failures:
-    1) testMatchesOtherMonth(REPL.$JShell$39E$LocalDateTest)
+    1) testMatchesOtherMonth(REPL.$JShell$39E$DatePatternTest)
     java.lang.AssertionError
     	at org.junit.Assert.fail(Assert.java:87)
     	at org.junit.Assert.assertTrue(Assert.java:42)
     	at org.junit.Assert.assertFalse(Assert.java:65)
     	at org.junit.Assert.assertFalse(Assert.java:75)
-    	at REPL.$JShell$39E$LocalDateTest.testMatchesOtherMonth($JShell$39E.java:34)
-    2) testMatchesOtherYear(REPL.$JShell$39E$LocalDateTest)
+    	at REPL.$JShell$39E$DatePatternTest.testMatchesOtherMonth($JShell$39E.java:34)
+    2) testMatchesOtherYear(REPL.$JShell$39E$DatePatternTest)
     java.lang.AssertionError
     	at org.junit.Assert.fail(Assert.java:87)
     	at org.junit.Assert.assertTrue(Assert.java:42)
     	at org.junit.Assert.assertFalse(Assert.java:65)
     	at org.junit.Assert.assertFalse(Assert.java:75)
-    	at REPL.$JShell$39E$LocalDateTest.testMatchesOtherYear($JShell$39E.java:41)
+    	at REPL.$JShell$39E$DatePatternTest.testMatchesOtherYear($JShell$39E.java:41)
     
     FAILURES!!!
     Tests run: 4,  Failures: 2
@@ -756,7 +756,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@26a473ba
+    org.junit.runner.Result@76089364
 
 
 
@@ -785,11 +785,11 @@ class DatePattern {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     ....
-    Time: 0,001
+    Time: 0,002
     
     OK (4 tests)
     
@@ -798,7 +798,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@25eecdba
+    org.junit.runner.Result@2601c47e
 
 
 
@@ -810,7 +810,7 @@ Wir definieren mit unseren Tests, dass eine `0` für die Jahreszahl dazu führen
 
 
 ```Java
-class LocalDateTest {
+class DatePatternTest {
   @Test
   public void testMatches() {
       DatePattern pattern = new DatePattern(2022, 5, 9);
@@ -850,18 +850,18 @@ class LocalDateTest {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     ..E...
-    Time: 0,001
+    Time: 0,002
     There was 1 failure:
-    1) testWildcardYear(REPL.$JShell$39G$LocalDateTest)
+    1) testWildcardYear(REPL.$JShell$39G$DatePatternTest)
     java.lang.AssertionError
     	at org.junit.Assert.fail(Assert.java:87)
     	at org.junit.Assert.assertTrue(Assert.java:42)
     	at org.junit.Assert.assertTrue(Assert.java:53)
-    	at REPL.$JShell$39G$LocalDateTest.testWildcardYear($JShell$39G.java:47)
+    	at REPL.$JShell$39G$DatePatternTest.testWildcardYear($JShell$39G.java:47)
     
     FAILURES!!!
     Tests run: 5,  Failures: 1
@@ -871,7 +871,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@2aa92cdc
+    org.junit.runner.Result@210de5ab
 
 
 
@@ -900,11 +900,11 @@ class DatePattern {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     .....
-    Time: 0,001
+    Time: 0,002
     
     OK (5 tests)
     
@@ -913,7 +913,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@6b775d88
+    org.junit.runner.Result@121d7724
 
 
 
@@ -921,7 +921,7 @@ Wir brauchen ähnliche Tests auch für Monat und Tag.
 
 
 ```Java
-class LocalDateTest {
+class DatePatternTest {
   @Test
   public void testMatches() {
       DatePattern pattern = new DatePattern(2022, 5, 9);
@@ -975,24 +975,24 @@ class LocalDateTest {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     .E..E....
-    Time: 0,002
+    Time: 0,003
     There were 2 failures:
-    1) testWildcardDay(REPL.$JShell$39I$LocalDateTest)
+    1) testWildcardDay(REPL.$JShell$39I$DatePatternTest)
     java.lang.AssertionError
     	at org.junit.Assert.fail(Assert.java:87)
     	at org.junit.Assert.assertTrue(Assert.java:42)
     	at org.junit.Assert.assertTrue(Assert.java:53)
-    	at REPL.$JShell$39I$LocalDateTest.testWildcardDay($JShell$39I.java:61)
-    2) testWildcardMonth(REPL.$JShell$39I$LocalDateTest)
+    	at REPL.$JShell$39I$DatePatternTest.testWildcardDay($JShell$39I.java:61)
+    2) testWildcardMonth(REPL.$JShell$39I$DatePatternTest)
     java.lang.AssertionError
     	at org.junit.Assert.fail(Assert.java:87)
     	at org.junit.Assert.assertTrue(Assert.java:42)
     	at org.junit.Assert.assertTrue(Assert.java:53)
-    	at REPL.$JShell$39I$LocalDateTest.testWildcardMonth($JShell$39I.java:54)
+    	at REPL.$JShell$39I$DatePatternTest.testWildcardMonth($JShell$39I.java:54)
     
     FAILURES!!!
     Tests run: 7,  Failures: 2
@@ -1002,7 +1002,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@5ff57df5
+    org.junit.runner.Result@3d2d06b7
 
 
 
@@ -1031,11 +1031,11 @@ class DatePattern {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     .......
-    Time: 0,001
+    Time: 0,003
     
     OK (7 tests)
     
@@ -1044,7 +1044,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@33ad0e35
+    org.junit.runner.Result@3c93bc1f
 
 
 
@@ -1083,7 +1083,7 @@ class DatePattern {
 
 
 ```Java
-junit.run(LocalDateTest.class);
+junit.run(DatePatternTest.class);
 ```
 
     .......
@@ -1096,7 +1096,7 @@ junit.run(LocalDateTest.class);
 
 
 
-    org.junit.runner.Result@2145728a
+    org.junit.runner.Result@5a0bc979
 
 
 
