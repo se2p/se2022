@@ -46,3 +46,11 @@ Das Testen ist eine der wichtigsten Methoden um die Qualitaet von Sourcecode
 sicherzustellen. In diesem Notebook sind die Beispiele aus der Vorlesung
 rund um das JUnit Test-Framework fuer Java gesammelt. [Markdown Export](rendered/3%20Testen.md)
 
+### 4: Vorlesung vom 16.5.2022: Refactoring
+
+Refactoring bezeichnet den Vorgang der Verbesserung der Code Qualitaet, ohne
+dabei die Funktionalitaet zu veraendern. Ein essentieller Bestandteil des
+Refactorings ist daher, die bestehenden Tests regelmaessig auszufuehren und
+die Funktionalitaet zu ueberpruefen. In diesem Notebook wird das in der
+Vorlesung vorgestellte Code-Beispiel in Einzelschritten nochmal erklaert.
+[Markdown Export](rendered/4%20Refactoring.md)
