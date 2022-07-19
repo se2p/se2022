@@ -61,3 +61,8 @@ Entwurfsmuster (Design Patterns) bezeichnen allgemeine Loesungen fuer
 wiederkehrende Probleme in der Softwareentwicklung. Wir betrachten in diesem
 und dem naechsten Notebook ein paar der wichtigsten Design Patterns.
 [Markdown Export](rendered/5%20Design%20Patterns%201.md)
+
+### 6: Vorlesung vom 18.7.2022: Design Patterns (Teil 2)
+
+In diesem Kapitel werden weitere Designpatterns behandelt.
+[Markdown Export](rendered/6%20Design%20Patterns%202.md)
